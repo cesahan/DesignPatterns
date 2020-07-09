@@ -103,12 +103,12 @@ namespace Strategy
         {
             var tp = new TextProcessor();
             tp.SetOutputFormat(OutputFormat.Markdown);
-            tp.AppendList(new []{ "foo", "bar", "baz" });
+            tp.AppendList(new []{ "foo", "bar", "markdown" });
             Console.WriteLine(tp);
 
             tp.Clear();
             tp.SetOutputFormat(OutputFormat.Html);
-            tp.AppendList(new[] { "foo", "bar", "baz" });
+            tp.AppendList(new[] { "foo", "bar", "html" });
             Console.WriteLine(tp);
         }
     }
